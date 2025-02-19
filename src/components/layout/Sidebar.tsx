@@ -18,6 +18,7 @@ const Sidebar = ({ className }: SidebarProps) => {
   const menuItems = [
     { icon: LayoutGrid, label: "Dashboard", path: "/" },
     { icon: Mail, label: "Campaigns", path: "/campaigns" },
+    { icon: FileText, label: "Analytics", path: "/analytics" },
     { icon: FileText, label: "Sequences", path: "/sequences" },
     { icon: Users, label: "Contacts", path: "/contacts" },
     { icon: FileText, label: "Templates", path: "/templates" },

@@ -6,6 +6,7 @@ import SignUp from "./components/auth/SignUp";
 import AuthCallback from "./components/auth/AuthCallback";
 import RequireAuth from "./components/auth/RequireAuth";
 import Settings from "./components/settings/Settings";
+import AnalyticsPage from "./pages/analytics";
 import { AuthProvider } from "./contexts/AuthContext";
 import routes from "tempo-routes";
 
@@ -27,6 +28,14 @@ function App() {
             element={
               <RequireAuth>
                 <Settings />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="/analytics"
+            element={
+              <RequireAuth>
+                <AnalyticsPage />
               </RequireAuth>
             }
           />
